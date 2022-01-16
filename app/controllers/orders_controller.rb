@@ -5,8 +5,7 @@ class OrdersController < ApplicationController
     @order = Order.find(params[:id])
 
     @line_items = LineItem.where("order_id = #{@order.id}")
-
-    puts "LINE ITEMS ------>#{@line_items[0].product.image}"
+    # puts "LINE ITEMS ------>#{@line_items[0].product.image}"
 
   end
 
