@@ -1,17 +1,27 @@
 class UsersController < ApplicationController
   def new
-    @user = User.new
+    user = User.new
   end
 
   def create
-    @user = User.new(user_params)
-    
-    if @user.save
-      redirect_to [:user, :create], notice: 'User created!'
+    user = User.new(user_params)
+    if user.save
+      session[:user_id] = user.id
+      redirect_to '/'
     else
-      render :new
+      redirect_to '/signup'
     end
   end
+
+  # def create
+  #   @user = User.new(user_params)
+    
+  #   if @user.save
+  #     redirect_to [:user, :create], notice: 'User created!'
+  #   else
+  #     render :new
+  #   end
+  # end
 
   private
 
@@ -20,7 +30,8 @@ class UsersController < ApplicationController
       :first_name,
       :last_name,
       :email,
-      :password_digest
+      :password,
+      :password_confirmation
     )
   end
 end
