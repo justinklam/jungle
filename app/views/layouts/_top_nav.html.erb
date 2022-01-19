@@ -51,7 +51,7 @@
         </li>
         <li class="nav-user">
           <% if current_user %>
-            Signed in as <%= current_user.first_name %>
+            <span class="nav-signed-in">Signed in as <%= current_user.first_name %></span>
             <%= link_to "Logout", '/logout' %>
           <% else %>
             <%= link_to 'Login', '/login' %>  

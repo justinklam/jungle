@@ -1,3 +1,8 @@
 .nav > li.nav-user {
   display: flex;
+
+  .nav-signed-in {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }
