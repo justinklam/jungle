@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   resources :about, only: [:index]
 
   # route needs to be set up
-  resources :users, only: [:show, :create]
+  resources :users, only: [:new, :create]
     get '/signup' => 'users#new'
     post '/users' => 'users#create'
 
