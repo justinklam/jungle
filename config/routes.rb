@@ -14,6 +14,11 @@ Rails.application.routes.draw do
 
   resources :about, only: [:index]
 
+  # route needs to be set up
+  resources :users, only: [:show, :create]
+    get '/signup' => 'users#new'
+    post '/users' => 'users#create'
+
   namespace :admin do
     root to: 'dashboard#show'
     resources :products, except: [:edit, :update, :show]
