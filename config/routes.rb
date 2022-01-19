@@ -14,12 +14,11 @@ Rails.application.routes.draw do
 
   resources :about, only: [:index]
 
-  # route needs to be set up
   resources :users, only: [:new, :create]
     get '/signup' => 'users#new'
     post '/users' => 'users#create'
 
-  resources :users, only: [:new, :create]
+  resources :sessions, only: [:new, :create, :destroy]
     get '/login' => 'sessions#new'
     post '/login' => 'sessions#create'
     get '/logout' => 'sessions#destroy'
