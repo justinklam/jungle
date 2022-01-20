@@ -4,7 +4,7 @@ class Admin::CategoriesController < ApplicationController
   # show all current categories
   def index
     @categories = Category.all
-    puts "Categories-----> #{@categories.name}"
+    # puts "Categories-----> #{@categories.name}"
     render :index
     
   end
