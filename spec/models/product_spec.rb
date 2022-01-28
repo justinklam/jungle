@@ -14,8 +14,9 @@ RSpec.describe Product, type: :model do
       # This should fail
       # cat1 = Category.create! name: 'book'
       # product1 = cat1.products.create!({ name: nil, price: 7, quantity: 3})
+      # puts product1.errors.full_messages
       
-      # it test is outside/independent of the creation to ensure it runs first
+      # this it test is outside/independent of the creation to ensure it runs first
       # it { expect(product1.quantity).not_to eql nil }
 
       # old format
