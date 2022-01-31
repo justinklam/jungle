@@ -24,6 +24,7 @@ RSpec.feature "ProductDetails", type: :feature, js: true do
     first("article.product").find_link("Details").click
     
     # Verify
+    # Checking to see if unique elements have generated specific to product show.html.erb
     expect(page).to have_css 'article.product-detail'
     
     # Debug
