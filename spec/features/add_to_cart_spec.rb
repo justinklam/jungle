@@ -17,6 +17,20 @@ RSpec.feature "AddToCarts", type: :feature, js: true do
   end
 
   scenario "User clicks product 1's Add to Cart" do
+    # Act
+    visit root_path
+
+    
+    #Exercise
+    expect(page).to have_content 'My Cart (0)'
+    first("article.product").find_button("Add").click
+
+    # Verify
+    expect(page).to have_content 'My Cart (1)'
+    
+    # Debug
+    # puts "Current Page----->#{page.html}"
+    # save_screenshot
 
   end
 
