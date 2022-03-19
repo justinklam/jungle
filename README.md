@@ -3,17 +3,17 @@
 Jungle is a mini e-commerce application built with Rails 4.2.
 
 ## Final Product
-###Main Page
+### Main Page
 ![Main](https://user-images.githubusercontent.com/85145076/156908212-3b3b9823-63bd-4b3b-a860-26a5286c99ba.png)
-###Categories
+### Categories
 ![Categories](https://user-images.githubusercontent.com/85145076/156908233-65650a63-edae-471b-99c8-6ba71a43ed3d.png)
-###Sign-up
+### Sign-up
 ![Sign-up](https://user-images.githubusercontent.com/85145076/156908238-c3512138-5e00-4257-8060-6c09fc148b5b.png)
-###Responsive Design
+### Responsive Design
 ![Responsive](https://user-images.githubusercontent.com/85145076/156908242-2921eb84-05d6-4c2b-9a3b-c5c474bbb4de.png)
-###Admin-Products
+### Admin-Products
 ![Admin-Products](https://user-images.githubusercontent.com/85145076/156908244-e7635529-e00a-4fb4-bb44-7e0b9da756ab.png)
-###Admin Categories
+### Admin Categories
 ![Admin-Categories](https://user-images.githubusercontent.com/85145076/156908245-c1908cbd-f7a7-494d-af49-c2e414e0884a.png)
 
 ## Additional Steps for Apple M1 Machines
